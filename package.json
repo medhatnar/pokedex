@@ -6,12 +6,23 @@
   "repository": "https://github.com/medhatnar/pokedex.git",
   "author": "<nar@codecademy.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "test": "jest"
+  },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.8"
   },
   "devDependencies": {
-    "jest": "^29.6.4"
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.16"
   }
 }

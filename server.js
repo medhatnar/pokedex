@@ -2,7 +2,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const db = require("./database");
+const db = require("./database/database.js");
 const api = require("./api");
 
 // Initializations //;
@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Routes
-app.use("/api", api);
+app.use("/pokemon", api);
 
 // Listeners //
 app.listen(port, () => {
